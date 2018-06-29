@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Fable binding for fast-memoize</Description>
+    <PackageProjectUrl>https://github.com/iyegoroff/fable-import-fast-memoize</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/iyegoroff/fable-import-fast-memoize</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/iyegoroff/fable-import-fast-memoize/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags>fsharp;fable;fast-memoize</PackageTags>
+    <Authors>iyegoroff</Authors>
+    <Version>0.0.1</Version>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Fable.Import.FastMemoize.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="*.fsproj; *.fs;" PackagePath="fable\" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
