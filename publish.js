@@ -45,14 +45,10 @@ const publish = async (bumpStrategy) => {
   run.stdout.pipe(process.stdout);
 };
 
-const args = process.argv;
+const [, ,bumpStrategy] = process.argv;
 
-const versionIsInvalid = args[2]
-  ? !/^(patch|minor|major)$/.test(args[2])
-  : false;
-
-if (versionIsInvalid) {
-  usage();
+if (bumpStrategy && /^(patch|minor|major)$/.test(bumpStrategy)) {
+  publish(bumpStrategy);
 } else {
-  publish(args[2]);
+  usage();
 }
