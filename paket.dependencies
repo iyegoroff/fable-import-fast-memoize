@@ -1,10 +1,12 @@
-source https://nuget.org/api/v2
-
-clitool dotnet-fable
-nuget FSharp.Core >= 4.2.3
-nuget Fable.Core >= 1.3.17
+group Main
+    source https://api.nuget.org/v3/index.json
+    storage:none
+    
+    clitool dotnet-fable
+    nuget FSharp.Core
+    nuget Fable.Core
 
 group Build
-source https://www.nuget.org/api/v2
+  source https://api.nuget.org/v3/index.json
 
 nuget FAKE
