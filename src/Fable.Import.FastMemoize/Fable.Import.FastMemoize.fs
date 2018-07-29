@@ -1,4 +1,3 @@
-[<RequireQualifiedAccess>]
 module Fable.Import.FastMemoize
 
 open Fable.Core
