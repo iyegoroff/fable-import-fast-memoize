@@ -13,10 +13,11 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Fable.Import.FastMemoize.fs" />
+    <Compile Include="src/Fable.Import.FastMemoize.fs" />
   </ItemGroup>
-  <ItemGroup>
+    <ItemGroup>
     <Content Include="*.fsproj; *.fs;" PackagePath="fable\" />
+    <Content Include="src\" PackagePath="fable\src\" />
   </ItemGroup>
-  <Import Project="..\..\.paket\Paket.Restore.targets" />
+  <Import Project=".paket\Paket.Restore.targets" />
 </Project>
